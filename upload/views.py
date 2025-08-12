@@ -10,16 +10,19 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
+#пишем представление для обработки формы и использования, отображения валидированных данных    
 class UploadView(FormView):
     template_name = "upload/index.html"
     form_class = UploadForm
     success_url = reverse_lazy("upload:upload_page")
 
+#получаем данные из templates
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
 
+#валидируем эти данные и используем функцию для ftp из utils.py
+#попутно отображаем успешность операции или ошибки с расшифровкой
     def form_valid(self, form):
         ip_address = form.cleaned_data["ip_address"]
         file = form.cleaned_data["file"]

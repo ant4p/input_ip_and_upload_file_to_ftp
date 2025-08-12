@@ -5,7 +5,7 @@ from django import forms
 from django.core.validators import validate_ipv4_address
 from django.core.exceptions import ValidationError
 
-
+#создаём форму для загрузки данных и валидируем эти данные
 class UploadForm(forms.Form):
     ip_address = forms.CharField(
         label="ip",
@@ -19,6 +19,7 @@ class UploadForm(forms.Form):
         widget=forms.FileInput(attrs={"class": "form-control"}),
     )
 
+#обрабатываем ошибки строки с IP адресом
     def clean_ip_address(self):
         ip_address = self.cleaned_data["ip_address"].strip()
         try:
@@ -30,6 +31,7 @@ class UploadForm(forms.Form):
         except ValidationError:
             raise ValidationError("Введите корректный IP-адрес")
 
+#обрабатываем ошибки загружаемого файла
     def clean_file(self):
         file = self.cleaned_data["file"]
         max_size = 10 * 1024 * 1024

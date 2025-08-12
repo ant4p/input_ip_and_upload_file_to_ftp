@@ -6,7 +6,8 @@ load_dotenv()
 
 port = int(os.getenv("PORT", '21'))
 
-
+#создаём функцию для соединения с ftp сервером и отправку файла в корневую директорию
+#обрабатываем ошибки и немного логгируем происходящее
 def download_to_ftp(host, username, password, file):
     ftp = None
     try:
