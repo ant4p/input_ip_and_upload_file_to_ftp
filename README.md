@@ -52,8 +52,9 @@ ALLOWED_HOST, SCRF_SUBDOMAIN=*. - доменное имя<br/>
 
 Для веб сервиса использованы:<br/>
 Локальный запуск:<br/>
-Django 5.2.5 основа<br/>
-python - dotenv переменные окружения .env<br/>
+python3.12 - основа<br/>
+Django 5.2.5 - основа<br/>
+python-dotenv переменные окружения .env<br/>
 ftplib - для взаимодействия с FTP<br/>
 sqlite3 - в качестве стандартной БД для django<br/>
 <br/>
