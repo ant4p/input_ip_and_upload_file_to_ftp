@@ -52,7 +52,9 @@ ALLOWED_HOST, SCRF_SUBDOMAIN=*. - доменное имя<br/>
 
 Для веб сервиса использованы:<br/>
 Локальный запуск:<br/>
-python3.12 - основа<br/>
+python3.12 - ЯП<br/>
+pip -пакетный менеджер<br/>
+python venv - в качестве виртуального окружения<br/>
 Django 5.2.5 - основа<br/>
 python-dotenv переменные окружения .env<br/>
 ftplib - для взаимодействия с FTP<br/>
