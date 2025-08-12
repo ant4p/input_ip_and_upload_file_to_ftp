@@ -44,7 +44,7 @@ USER_PASSWORD - пароль от пользователя<br/>
 SECRET_KEY - ваш секретный ключ от django<br/>
 PORT - порт для подключения к FTP серверу<br/>
 USER - пользователь с правами доступа для записи в каталог "/"<br/>
-USER_PASSWORD - пароль от пользователя<br/>:
+USER_PASSWORD - пароль от пользователя<br/>
 POSTGRES_HOST, POSTGRES_PORT, POSTGRES_DB, POSTGRES_USER, POSTGRES_PASSWORD - данные для БД PostgreSQL<br/>
 ALLOWED_HOST, SCRF_SUBDOMAIN=*. - доменное имя<br/>
 
