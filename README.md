@@ -35,7 +35,7 @@ USER_PASSWORD - пароль от пользователя<br/>
  <img width=auto, height=1000 src="images/root_directory_with_file.png" alt="output"/>
 </p>
 <br/>
-### Веб сервис подготовлен для деплоя на сервер с помощью Docker и Docker compose.### 
+Веб сервис подготовлен для деплоя на сервер с помощью Docker и Docker compose.<br/>
 Для этого понадобится VPS c установленными Docker и Docker compose, и минимально настроенными политиками безопасности.<br/>
 Для запуска - склонируйте проект командой git clone https://github.com/ant4p/input_ip_and_upload_file_to_ftp.git<br/>
 Файл .env_example замените на .env c вашими данными: <br/>
