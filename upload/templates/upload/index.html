@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='container'>
+    </br>
+    <h3>Введите IP-адрес и загрузите файл прошивки.</h3>
+    </br>
+        {% if messages %}
+            {% for message in messages %}
+                <div class="{% if message.tags == 'success' %}success{% else %}failure{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </br>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <label for="id_ip_address">Введите IP-адрес устройства:</label>
+                <input type="text" name="ip_address" id="id_ip_address">
+                {% if form.ip_address.errors %}
+                    <div class="error">{{ form.ip_address.errors.0 }}</div>
+                {% endif %}
+            </div>
+    </br>       
+            <div class="form-group">
+                <label for="id_file">Загрузите файл прошивки (.txt):</label>
+                <input type="file" name="file" id="id_file" required>
+                {% if form.file.errors %}
+                    <div class="error">{{ form.file.errors.0 }}</div>
+                {% endif %}
+            </div>
+    </br>       
+            <button type="submit">Загрузить</button>
+        </form>
+</div>
+{% endblock %}
