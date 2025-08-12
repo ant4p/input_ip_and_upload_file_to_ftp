@@ -47,7 +47,8 @@ POSTGRES_HOST, POSTGRES_PORT, POSTGRES_DB, POSTGRES_USER, POSTGRES_PASSWORD - д
 ALLOWED_HOST, SCRF_SUBDOMAIN=*. - доменное имя<br/>
 
 Перейдите в папку с проектом и запустите docker-compose.yml файл командой: docker compose up <br/>
-Перейдите по адресу доменного имени, он будет доступен по протоколу https<br/>
+После того, как проект сбилдится и запустится - <br/>
+перейдите по адресу доменного имени, он будет доступен по протоколу https<br/>
 
 Для веб сервиса использованы:<br/>
 Локальный запуск:<br/>
