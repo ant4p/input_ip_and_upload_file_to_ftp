@@ -55,7 +55,8 @@ ALLOWED_HOST, SCRF_SUBDOMAIN=*. - доменное имя<br/>
 Django 5.2.5 основа<br/>
 python - dotenv переменные окружения .env<br/>
 ftplib - для взаимодействия с FTP<br/>
-sqlite3 - в качестве стандартной БД для django
+sqlite3 - в качестве стандартной БД для django<br/>
+<br/>
 На сервере + :<br/>
 Docker compose - для финальной сборки <br/>
 Docker - для сборки образов <br/>
